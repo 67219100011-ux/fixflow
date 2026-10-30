@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FixFlow | ระบบแจ้งซ่อมคอมพิวเตอร์</title>
+
+    <!-- เชื่อมต่อไฟล์ตกแต่งเว็บไซต์ -->
+   <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ส่วนหัวเว็บไซต์ -->
+    <header class="topbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">⚙</div>
+
+            <div class="brand-text">
+                <h1>FixFlow</h1>
+                <p>ระบบจัดการงานแจ้งซ่อม กลุ่มเยิ้มพาเพลิน</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- เนื้อหาหลัก -->
+    <main class="login-container">
+
+
+        <!-- ฝั่งซ้าย แนะนำระบบ -->
+        <section class="welcome-panel">
+
+            <div class="welcome-content">
+
+                <span class="subtitle">
+                    ระบบจัดการงานแจ้งซ่อมคอมพิวเตอร์
+                </span>
+
+                <h2>
+                    จัดการปัญหาที่คุณเจอ<br>
+                         ให้เป็นเรื่องง่ายนิดเดียว
+                </h2>
+
+                <p class="description">
+                    ระบบแจ้งซ่อมและติดตามสถานะอุปกรณ์คอมพิวเตอร์
+                    สำหรับครูและช่างซ่อม ใช้งานง่าย สะดวก
+                    และเป็นระบบ สแกนปุมแจ้งปั๊บ!
+                </p>
+
+
+                <!-- จุดเด่นของระบบ -->
+                <div class="feature-list">
+
+                    <div class="feature-item">
+                        <span class="feature-icon">✅</span>
+                        <p>แจ้งปัญหาคอมพิวเตอร์ได้สะดวก</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-icon">🔄</span>
+                        <p>ติดตามสถานะการซ่อมได้</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-icon">📒</span>
+                        <p>จัดเก็บข้อมูลการซ่อมอย่างเป็นระบบ</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ฝั่งขวา เข้าสู่ระบบ -->
+        <section class="login-panel">
+
+            <div class="login-form-container">
+
+                <h2>เข้าสู่ระบบ</h2>
+
+                <p class="login-description">
+                    กรุณากรอกข้อมูลเพื่อเข้าใช้งานระบบ
+                </p>
+
+
+                <!-- แบบฟอร์มเข้าสู่ระบบ -->
+                <form id="loginForm">
+
+
+                    <!-- ช่องชื่อผู้ใช้ -->
+                    <div class="form-group">
+
+                        <label for="username">
+                            ชื่อผู้ใช้หรืออีเมล
+                        </label>
+
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            placeholder="First name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ช่องรหัสผ่าน -->
+                    <div class="form-group">
+
+                        <label for="password">
+                            รหัสผ่าน
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- แสดงรหัสผ่าน -->
+                    <div class="show-password">
+
+                        <input
+                            type="checkbox"
+                            id="showPassword"
+                        >
+
+                        <label for="showPassword">
+                            แสดงรหัสผ่าน
+                        </label>
+
+                    </div>
+
+
+                    <!-- เลือกประเภทผู้ใช้งาน -->
+                    <div class="role-section">
+
+                        <label class="role-title">
+                            เลือกประเภทผู้ใช้งาน
+                        </label>
+
+                        <div class="role-options">
+
+
+                            <!-- ประเภทครู -->
+                            <label class="role-card">
+
+                                <input
+                                    type="radio"
+                                    name="role"
+                                    value="teacher"
+                                    required
+                                >
+
+                                <span class="role-content">
+
+                                    <span class="role-icon">
+                                        👨‍🏫
+                                    </span>
+
+                                    <span>ครู</span>
+
+                                </span>
+
+                            </label>
+
+
+                            <!-- ประเภทช่างซ่อม -->
+                            <label class="role-card">
+
+                                <input
+                                    type="radio"
+                                    name="role"
+                                    value="technician"
+                                >
+
+                                <span class="role-content">
+
+                                    <span class="role-icon">
+                                        🛠️💻
+                                    </span>
+
+                                    <span>ช่างซ่อม</span>
+
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ปุ่มเข้าสู่ระบบ -->
+                    <button
+                        type="submit"
+                        class="login-button"
+                    >
+                        เข้าสู่ระบบ →
+                    </button>
+
+
+                </form>
+
+
+                <!-- ข้อความความปลอดภัย -->
+                <div class="security-note">
+                    🔒 สำหรับบุคลากรที่ได้รับอนุญาตเท่านั้น
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ส่วนท้ายเว็บไซต์ -->
+    <footer class="page-footer">
+
+        <p>
+            © 2026 FixFlow ระบบแจ้งซ่อมคอมพิวเตอร์
+        </p>
+
+    </footer>
+    <!-- เชื่อมต่อ JavaScript -->
+<script src="../static/js/script.js"></script>
+
+</body>
+</html>
